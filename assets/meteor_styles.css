@@ -1,0 +1,24 @@
+body {
+  background-color: white;
+  font-family: arial, sans-serif;
+}
+
+h4 {
+  margin-bottom: 10";
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 300px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 5px;
+}
+
+tr {
+  background-color: #ffffff;
+}
