@@ -1,4 +1,3 @@
-import os
 import folium
 import webbrowser
 from meteor import Meteor
@@ -10,14 +9,11 @@ US_EAST_LON = (-82.0, -69.0)
 US_PA_LAT = 41.0
 US_PA_LON = -77.0
 
-# dir path to this file
-DIR_PATH = os.path.dirname(os.path.realpath(__file__))
-
 # Output file - HTML meteorites map
-METEORS_HTML_FILE = DIR_PATH + '\\assets\\meteors.html'
+METEORS_HTML_FILE = 'assets\\meteors.html'
 
 # Input file - meteorite landings csv file
-METEORS_CSV_FILE = DIR_PATH + '\\assets\\Meteorite_Landings.csv'
+METEORS_CSV_FILE = 'assets\\Meteorite_Landings.csv'
 
 
 def main():
@@ -61,7 +57,7 @@ def main():
 
     del m
 
-    webbrowser.get().open_new_tab(METEORS_HTML_FILE)
+    webbrowser.get().open_new_tab(".\\" + METEORS_HTML_FILE)
 
 
 if __name__ == '__main__':
